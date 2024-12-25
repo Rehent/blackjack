@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="game-result" class="status-bar">
+    <button class="button" id="newGame">New Game</button>
+  </div>
+
+  <div id="table" class="table">
+    <!-- Поле дилера -->
+    <div class="play-field" id="dealer-field">
+      <div class="dealer-cards" id="dealer-cards">
+        <!-- Карты дилера будут добавлены сюда -->
+      </div>
+    </div>
+   
+  
+    <!-- Поле игрока -->
+    <div class="play-field" id="player-field">
+      <!-- Левая панель со счетом -->
+      <div class="score-panel">
+        <p>Score: <span id="score">0</span></p>
+        <p>Round Wins: <span id="roundWins">0</span></p>
+      </div>
+
+      <!-- Карты игрока -->
+      <div class="player-cards" id="player-cards">
+        <!-- Карты игрока будут добавлены сюда -->
+      </div>
+
+      <!-- Правая панель с кнопками -->
+      <div class="buttons-panel">
+        <button class="button" id="getCardButton">Get Card</button>
+        <button class="button" id="openCardsButton">Open Cards</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
